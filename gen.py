@@ -11,6 +11,6 @@ def main():
 def generate_pw(length: int):
     options = string.ascii_letters + string.punctuation + string.digits
     pw = "".join(random.choices(options, k=length))
-    print(f"generated password: '{pw}'")
+    print("generated password: '{0}'".format(pw))
 
 main()
